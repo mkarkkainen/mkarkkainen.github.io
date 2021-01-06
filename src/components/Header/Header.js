@@ -5,7 +5,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Badge,
 } from "@material-ui/core";
 import logo from "../../assets/images/slogo.svg";
 import useStyles from "./styles";
