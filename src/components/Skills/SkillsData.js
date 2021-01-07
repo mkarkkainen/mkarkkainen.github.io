@@ -1,7 +1,7 @@
 import {
     FaNode,
     FaReact,
-    FaGit,
+    FaGitAlt,
     FaPython,
     FaNpm
   } from "react-icons/fa";
@@ -32,7 +32,7 @@ export const devSkills = [
     {
         id: 5,
         name: "git",
-        skill: <FaGit className="items" />,
+        skill: <FaGitAlt className="items" />,
     },
     {
         id: 6,

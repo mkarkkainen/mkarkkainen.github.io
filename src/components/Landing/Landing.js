@@ -1,9 +1,14 @@
 import React from 'react';
+import { Container, Typography } from '@material-ui/core'
 
 const Landing = () => {
     return (
         <header>
-            Land
+            <Container>
+
+                <Typography></Typography>
+
+            </Container>
         </header>
     )
 }
