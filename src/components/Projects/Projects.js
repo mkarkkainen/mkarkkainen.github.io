@@ -1,11 +1,18 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core'
+import useStyles from './styles';
 
 const Projects = () => {
+    const classes = useStyles();
+
     return (
-        <div>
-            <Typography>Projects</Typography>
-        </div>
+        <header>
+            <Container alignItems="center" className={classes.root}>
+
+                <Typography>Projects</Typography>
+
+            </Container>
+        </header>
     )
 }
 

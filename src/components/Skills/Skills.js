@@ -8,7 +8,7 @@ const Skills = () => {
     const classes = useStyles()
 
   return (
-      <section className={classes.content} style={{ margin: "4% 0 4% 0" }}>
+      <section className={classes.content}>
         <Container>
           <div className={classes.toolbar}>
               <Typography variant="h4" className={classes.title}>skills</Typography>
