@@ -3,7 +3,6 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   IconButton,
 } from "@material-ui/core";
 import logo from "../../assets/images/slogo.svg";
@@ -23,7 +22,6 @@ const Header = () => {
             </IconButton>
             <Typography variant="body1" className={classes.title}>MIIKKA KÄRKKÄINEN</Typography>
           </Toolbar>
-
 
           <div className={classes.grow} />
 

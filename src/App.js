@@ -1,13 +1,20 @@
 import React from "react";
+import { CssBaseline } from '@material-ui/core';
 import { Container } from "@material-ui/core";
-import { Header } from "./components";
+import { Header, Skills } from "./components";
+import { ThemeProvider } from '@material-ui/core/styles';
+import { theme } from './theme';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Container />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <CssBaseline />
+          <Header />
+          <Skills />
+          <Container />
+      </div>
+    </ThemeProvider>
   );
 };
 
