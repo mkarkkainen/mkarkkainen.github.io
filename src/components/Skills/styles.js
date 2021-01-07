@@ -3,12 +3,22 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   content: {
+    backgroundColor: "#121212",
     flexGrow: 1,
-    //padding: theme.spacing(3),
+    paddingLeft: "8%",
+    paddingRight: "8%"
   },
   paper: {
-    //padding: theme.spacing(2),
+    boxShadow: "none",
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color: "#f2f2f2",
+    backgroundColor: "transparent",
   },
+  items: {
+      fontSize: "8em",
+      color: "#f2f2f2",
+      backgroundColor: "transparent",
+      boxShadow: "none",
+  }
+
 }));

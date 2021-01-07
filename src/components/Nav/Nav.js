@@ -8,7 +8,7 @@ import {
 import logo from "../../assets/images/slogo.svg";
 import useStyles from "./styles";
 
-const Header = () => {
+const Nav = () => {
   const classes = useStyles();
 
   return (
@@ -53,4 +53,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;

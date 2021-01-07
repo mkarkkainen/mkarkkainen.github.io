@@ -1,7 +1,7 @@
 import React from "react";
 import { CssBaseline } from '@material-ui/core';
 import { Container } from "@material-ui/core";
-import { Header, Skills } from "./components";
+import { Nav, Skills, Footer } from "./components";
 import { ThemeProvider } from '@material-ui/core/styles';
 import { theme } from './theme';
 
@@ -10,9 +10,10 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div>
         <CssBaseline />
-          <Header />
+          <Nav />
           <Skills />
           <Container />
+          <Footer />
       </div>
     </ThemeProvider>
   );
