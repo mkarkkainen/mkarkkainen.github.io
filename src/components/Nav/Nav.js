@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaNode } from "react-icons/fa";
+import { VscMail } from "react-icons/vsc";
+
 import {
   AppBar,
   Toolbar,
@@ -6,55 +9,98 @@ import {
   IconButton,
   Grid,
   makeStyles,
-  Button
+  Button,
+  Paper,
+  Tabs,
+  Tab
 } from "@material-ui/core";
 import logo from "../../assets/images/slogo.svg";
 //import useStyles from "./styles";
 
-const useStyles = makeStyles((theme) => ({
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     backgroundColor: "#EAEAEA",
+//     height: 100,
+//     display: "flex",
+//     justifyContent: "center",
+//     alignContent: "center"
+//   },
+//   cbtn: {
+//     background: "#EF5C7E",
+//     border: 0,
+//     fontSize: 16,
+//     borderRadius: 3,
+//     boxShadow: "0 2.8px 2.2px rgba(0, 0, 0, 0.034)",
+//     color: 'white',
+//     height: 48,
+//     padding: '0 30px',
+//     '&:hover': {
+//       backgroundColor: "#5CEF8F"
+//     }
+//   },
+//   btn: {
+//     color: '#353535',
+//   }
+// }))
+
+const useStyles = makeStyles(() => ({
   root: {
-    backgroundColor: "#fff",
+    flexGrow: 1,
+  },
+  bar: {
+    backgroundColor: "#EAEAEA",  
+  },
+  links: {
+    color: "#353535",
+    transition: "0.3s ease",
+    '&:hover': {
+      opacity: 1,
+    }
   },
   btn: {
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-    border: 0,
-    fontSize: 16,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
+    color: "#353535"
   }
 }))
 
 const Nav = () => {
   const classes = useStyles();
+  const [ value, setValue ] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
-    <AppBar position="fixed" className={classes.root}>
-      <Toolbar>
-        <Grid container alignItems="center">
-          <Grid item sm={4}>
-            <img src={logo} alt="logo" style={{ padding: "4px"}} />
-          </Grid>
-          <Grid item sm></Grid>
-          <Grid item m={4}>
-            <Button href="#" variant="text" onClick={() => console.log("Clicked ABOUT")}>
-              About
-            </Button>
-            <Button href="#" variant="text" onClick={() => console.log("Clicked PROJECTS")}>
-              Projects
-            </Button>
-            <Button href="#" variant="text" style={{ marginRight: 16 }} onClick={() => console.log("Clicked SKILLS")}>
-              Skills
-            </Button>
-            <Button href="#" variant="contained" className={classes.btn}>
-              Contact Me
-            </Button>
-          </Grid>
-        </Grid>
-      </Toolbar>
-    </AppBar>
+    <div className={classes.root}>
+      <AppBar position="fixed" className={classes.bar}>
+        <Toolbar>
+          <IconButton
+              color="inherit"
+              aria-label="a logo"
+              style={{ flexGrow: 1, justifyContent: "flex-start" }}
+            >
+            <img src={logo} alt="logo" />
+          </IconButton>
+          <Tabs
+            TabIndicatorProps={{
+              style: {
+                backgroundColor: "#A2A2A2"
+              }
+            }}
+            value={value}
+            onChange={handleChange}
+            style={{ flexGrow: 1, margin: "auto"}}>
+
+            <Tab className={classes.links} label="About" href="#" />
+            <Tab className={classes.links} label="Projects" href="#" />
+
+          </Tabs>
+          <IconButton>
+            {<VscMail className={classes.btn} />}
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+    </div>
   )
 }
 

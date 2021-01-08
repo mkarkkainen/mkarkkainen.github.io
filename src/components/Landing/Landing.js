@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Typography, Box, FormControlLabel, Checkbox } from '@material-ui/core'
 import useStyles from './styles';
 
 const Landing = () => {
-    const [ checked, setChecked ] = useState(true);
     const classes = useStyles();
 
     return (
         <header>
-            <FormControlLabel 
+            {/* <FormControlLabel 
                 control={
                     <Checkbox 
                         checked={checked}
@@ -16,9 +15,9 @@ const Landing = () => {
                     />
                 }
                 label="a fucking checkbox"
-            />
+            /> */}
             <Container className={classes.root}>
-                    <Typography align="center">Landing</Typography>
+                    <Typography align="center" className={classes.textStyle}>Landing</Typography>
             </Container>
         </header>
     )

@@ -10,8 +10,8 @@ export default makeStyles((theme) => ({
   },
   title: {
   textAlign: "center",
-  color: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-  padding: "4% 0 4% 0",
+  color: "#353535",
+  padding: "8% 0 8% 0",
   },
   paper: {
     boxShadow: "none",
@@ -25,5 +25,4 @@ export default makeStyles((theme) => ({
       backgroundColor: "transparent",
       boxShadow: "none",
   }
-
 }));

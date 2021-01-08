@@ -8,5 +8,5 @@ export default makeStyles(() => ({
         display: "flex",
         alignContent: "center",
         justifyContent: "center"
-    }
+    },
 }));

@@ -7,5 +7,8 @@ export const theme = createMuiTheme({
     svg: {
       height: "auto",
       width: "auto"
+    },
+    inkBar: {
+      backgroundColor: "yellow",
     }
   });
