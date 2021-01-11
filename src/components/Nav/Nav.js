@@ -84,7 +84,9 @@ const Nav = () => {
           <Tabs
             TabIndicatorProps={{
               style: {
-                backgroundColor: "#A2A2A2"
+                backgroundColor: "#A2A2A2",
+                height: 6,
+                boxShadow: "2px -6px 5px 0px rgba(0,0,0,1);"
               }
             }}
             value={value}
