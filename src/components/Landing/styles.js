@@ -9,5 +9,9 @@ export default makeStyles(() => ({
     alignItems: "center",
     justifyContent: "center",
   },
+  wrap: {
+    width: "510px",
+    color: "#606060",
+  },
 }));
 
