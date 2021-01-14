@@ -8,38 +8,46 @@ import useStyles from "./styles";
 const Landing = () => {
   const classes = useStyles();
   return (
-    <Grid container className={classes.root}>
-      <Typography variant="h4" className={classes.wrap}>
-        <Typewriter
-          options={{
-            autoStart: true,
-            delay: 75,
-            loop: false,
-          }}
-          onInit={(typewriter) => {
-            typewriter
-              .typeString(
-                "Hi, my name is <span style='color: #353535'>Miikka</span>."
-              )
-              .pauseFor(500)
-              .typeString("<br />")
-              .typeString(
-                "I'm a UX/UI <span style='color: #353535'>Designer</span>"
-              )
-              .pauseFor(500)
-              .typeString("<br />")
-              .typeString(
-                "and Front-end <span style='color: #353535'>Developer</span>."
-              )
-              .start();
-          }}
-        />
-      </Typography>
-    </Grid>
+    <div>
+      <Grid container className={classes.root}>
+        <Grid item>
+          <Typography variant="h1" className={classes.wrap}>
+            Miikka P Kärkkäinen
+          </Typography>
+          <Typography variant="h3">Front-end Developer</Typography>
+        </Grid>
+      </Grid>
+    </div>
   );
 };
 
 export default Landing;
+
+// <Typewriter
+//          options={{
+//            autoStart: true,
+//            delay: 75,
+//            loop: false,
+//          }}
+//          onInit={(typewriter) => {
+//            typewriter
+//              .typeString(
+//                "Hi, my name is <span style='color: #353535'>Miikka</span>."
+//              )
+//              .pauseFor(500)
+//              .typeString("<br />")
+//              .typeString(
+//                "I'm a UX/UI <span style='color: #353535'>Designer</span>"
+//              )
+//              .pauseFor(500)
+//              .typeString("<br />")
+//              .typeString(
+//                "and Front-end <span style='color: #353535'>Developer</span>."
+//              )
+//              .start();
+//          }}
+//        />
+//      </Typography>
 
 //      <Grid container className={classes.root}>
 //        <Grid item>

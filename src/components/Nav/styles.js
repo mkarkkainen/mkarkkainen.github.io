@@ -1,40 +1,21 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export default makeStyles((theme) => ({
-
-  appBar: {
-    backgroundColor: "#121212",
-    boxShadow: "none",
-    borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+export default makeStyles(() => ({
+  root: {
+    flexGrow: 1,
   },
-
-  leftSide: {
-    paddingLeft: "8%",
+  bar: {
+    backgroundColor: "#EAEAEA",
   },
-
   links: {
-    paddingRight: "8%",
+    border: "3px solid red",
+    color: "#353535",
+    transition: "0.3s ease",
+    "&:hover": {
+      opacity: 1,
+    },
   },
-
-  title: {
-    flexGrow: 1,
-    alignItems: "center",
-    display: "flex",
-    textDecoration: "none",
-    fontFamily: "Ubuntu",
-    paddingLeft: "8px",
+  btn: {
+    color: "#353535",
   },
-
-  image: {
-    marginRight: "10px",
-  },
-
-  grow: {
-    flexGrow: 1,
-  },
-
-  link: {
-    fontFamily: "Ubuntu",
-    color: "#fff",
-  }
 }));

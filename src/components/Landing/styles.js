@@ -5,13 +5,14 @@ export default makeStyles(() => ({
     backgroundColor: "#EAEAEA",
     width: "100%",
     height: "80vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    display: "grid",
+    placeItems: "center center",
   },
   wrap: {
-    width: "510px",
+    border: "3px solid red",
     color: "#606060",
+    display: "grid",
+    placeItems: "center",
   },
 }));
 

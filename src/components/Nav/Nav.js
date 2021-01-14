@@ -6,34 +6,11 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Grid,
-  makeStyles,
-  Button,
-  Paper,
   Tabs,
   Tab,
 } from "@material-ui/core";
 import logo from "../../assets/images/slogo.svg";
-//import useStyles from "./styles";
-
-const useStyles = makeStyles(() => ({
-  root: {
-    flexGrow: 1,
-  },
-  bar: {
-    backgroundColor: "#EAEAEA",
-  },
-  links: {
-    color: "#353535",
-    transition: "0.3s ease",
-    "&:hover": {
-      opacity: 1,
-    },
-  },
-  btn: {
-    color: "#353535",
-  },
-}));
+import useStyles from "./styles";
 
 const Nav = () => {
   const classes = useStyles();
@@ -58,8 +35,7 @@ const Nav = () => {
           <Tabs
             TabIndicatorProps={{
               style: {
-                backgroundColor: "#A3A2A2",
-                height: 2,
+                display: "none",
               },
             }}
             value={value}
