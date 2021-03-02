@@ -12,7 +12,6 @@ export default makeStyles(() => ({
     border: "3px solid red",
     color: "#606060",
     display: "grid",
-    placeItems: "center",
+    width: "100vh",
   },
 }));
-

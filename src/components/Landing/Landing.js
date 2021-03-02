@@ -12,9 +12,44 @@ const Landing = () => {
       <Grid container className={classes.root}>
         <Grid item>
           <Typography variant="h1" className={classes.wrap}>
-            Miikka P Kärkkäinen
+            Miikka K
           </Typography>
-          <Typography variant="h3">Front-end Developer</Typography>
+          <Typography variant="h3">
+            <Typewriter
+              options={{
+                autoStart: true,
+                delay: 75,
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Front-end Developer.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .pauseFor(600)
+                  .typeString("UX/UI Designer.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .pauseFor(600)
+                  .typeString("Surfer.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .pauseFor(600)
+                  .typeString("Music Producer.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .pauseFor(600)
+                  .typeString("XC-Skiing Enthusiast.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .pauseFor(600)
+                  .typeString("Fan of Ethereum.")
+                  .pauseFor(1600)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </Typography>
         </Grid>
       </Grid>
     </div>
