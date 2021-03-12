@@ -3,8 +3,9 @@ import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import logo from "../../assets/images/slogo.svg";
+import profile from '../../assets/images/me.jpg'
 
-import { CssBaseline, Grid, Typography, Paper, Link, Button, IconButton } from "@material-ui/core";
+import { CssBaseline, Grid, Typography, Paper, Link, Button } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '5%'
   },
   image: {
-    backgroundImage: 'url(https://source.unsplash.com/random)',
+    backgroundImage: `url(${profile})`,
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
@@ -60,9 +61,9 @@ const Landing = () => {
               <Typography variant="h6" className={classes.name}>
                 MIIKKA KÄRKKÄINEN
               </Typography>
-              <IconButton>
+              
                 <img src={logo} alt="logo" />
-              </IconButton>
+              
             </Grid>
 
             <Grid item>
