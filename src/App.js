@@ -9,9 +9,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div>
         <CssBaseline />
-        <Nav />
         <Landing />
-        <Services />
       </div>
     </ThemeProvider>
   );

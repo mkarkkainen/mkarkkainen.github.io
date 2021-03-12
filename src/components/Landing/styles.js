@@ -5,7 +5,7 @@ export default makeStyles(() => ({
     backgroundColor: "#EAEAEA",
     width: "100%",
     height: "80vh",
-    display: "grid",
+    display: "flex",
     placeItems: "center center",
   },
   wrap: {
