@@ -1,6 +1,6 @@
 import React from "react";
 import { CssBaseline } from "@material-ui/core";
-import { Nav, Landing, Services, Skills, Footer, Projects } from "./components";
+import { Nav, Landing, Skills, Footer, Projects, UnoTown } from "./components";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./theme";
 
@@ -9,7 +9,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div>
         <CssBaseline />
-        <Landing />
+        {/* <Landing />
+        <Projects /> */}
+        <UnoTown />
       </div>
     </ThemeProvider>
   );

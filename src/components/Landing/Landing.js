@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
+    marginBottom: '5%'
   },
   image: {
     backgroundImage: 'url(https://source.unsplash.com/random)',
@@ -68,7 +69,7 @@ const Landing = () => {
 
             <Grid item>
               <Typography variant="h2" className={classes.mid}>
-                <Typewriter
+                {/* <Typewriter
                 options={{
                   autoStart: true,
                   delay: 75,
@@ -80,10 +81,10 @@ const Landing = () => {
                     .typeString("A UX/UI Designer & Front-end Developer from Finland.")
                     .start();
                 }}
-              />
-              {/* A UX/UI Designer & <br />
+              /> */}
+              A UX/UI Designer & <br />
               Front-end Developer <br />
-              from Finland. <br /> */}
+              from Finland. <br />
               </Typography>
 
               <Typography variant="body1" className={classes.mid}>
