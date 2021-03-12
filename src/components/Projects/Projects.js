@@ -3,10 +3,15 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import IconButton from '@material-ui/core/IconButton';
+
+import logo from "../../assets/images/slogo.svg";
+
 
 import Klogo from "../../assets/images/Frame18.png";
 import Ulogo from "../../assets/images/Frame12.png";
@@ -19,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
-    marginTop: "15%",
+    marginTop: "5%",
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -38,10 +43,10 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     flexGrow: 1,
-  },
+  }
 }));
 
-const cards = [Ulogo, Ylogo, Klogo];
+
 
 export default function Album() {
   const classes = useStyles();
@@ -50,7 +55,12 @@ export default function Album() {
     <>
       <CssBaseline />
       <main>
-        {/* Hero unit */}
+        <Container align="center" >
+            <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
+            <IconButton>
+                    <img src={logo} alt="logo" />
+            </IconButton>
+        </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h6" variant="h6" align="center" color="textPrimary" gutterBottom>
@@ -62,19 +72,46 @@ export default function Album() {
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
+
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={card}
-                    title="Image title"
-                  />
+                    <Link href="/Unotown">
+                        <CardMedia
+                            className={classes.cardMedia}
+                            image={Ulogo}
+                            title="Image title"
+                        />
+                    </Link>
                 </Card>
-              </Grid>
-            ))}
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                    <Link href="/Yamuni">
+                        <CardMedia
+                            className={classes.cardMedia}
+                            image={Ylogo}
+                            title="Image title"
+                        />
+                    </Link>
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                    <Link href="/Kokkosaari">
+                        <CardMedia
+                            className={classes.cardMedia}
+                            image={Klogo}
+                            title="Image title"
+                        />
+                    </Link>
+                </Card>
+            </Grid>
+            <Grid item >
+                <Button variant="outlined" color="default" className={classes.buttons}>
+                    <Link href="/">BACK</Link>
+                </Button>
+            </Grid>
           </Grid>
         </Container>
       </main>

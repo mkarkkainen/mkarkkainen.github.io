@@ -1,5 +1,4 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -41,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid black'
   },
   name: {
-    borderBottom: '1px solid black',
     width: '30%'
   }
 }));
@@ -69,19 +67,6 @@ const Landing = () => {
 
             <Grid item>
               <Typography variant="h2" className={classes.mid}>
-                {/* <Typewriter
-                options={{
-                  autoStart: true,
-                  delay: 75,
-                  loop: false,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(3000)
-                    .typeString("A UX/UI Designer & Front-end Developer from Finland.")
-                    .start();
-                }}
-              /> */}
               A UX/UI Designer & <br />
               Front-end Developer <br />
               from Finland. <br />
@@ -98,7 +83,7 @@ const Landing = () => {
               </Button>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
-                <Link href="#">PORTFOLIO</Link>
+                <Link href="/Projects">PORTFOLIO</Link>
               </Button>
 
             </Grid>
