@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { CssBaseline } from "@material-ui/core";
-import { Nav, Landing, Skills, Footer, Projects, UnoTown, Yamuni, Kokkosaari } from "./components";
+import { Landing, Footer, Projects, UnoTown, Yamuni, Kokkosaari } from "./components";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./theme";
 

@@ -8,14 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import IconButton from '@material-ui/core/IconButton';
 
 import logo from "../../assets/images/slogo.svg";
 
-
-import Klogo from "../../assets/images/Frame18.png";
-import Ulogo from "../../assets/images/Frame12.png";
-import Ylogo from "../../assets/images/Frame16.png";
+import Klogo from "../../assets/images/Frame18.jpg";
+import Ulogo from "../../assets/images/Frame12.jpg";
+import Ylogo from "../../assets/images/Frame16.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -57,17 +55,15 @@ export default function Album() {
       <main>
         <Container align="center" >
             <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-            <IconButton>
-                    <img src={logo} alt="logo" />
-            </IconButton>
+            <img src={logo} alt="logo" />
         </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h6" variant="h6" align="center" color="textPrimary" gutterBottom>
-              <strong>Projects</strong>
+                <strong>UX/UI & Product Design Projects</strong>
             </Typography>
             <Typography variant="body1" align="center" color="textSecondary" paragraph>
-                This is a collection of some design projects I have worked on.
+                Here is a collection of some of the design projects I have worked on in the past.
             </Typography>
           </Container>
         </div>
@@ -109,7 +105,7 @@ export default function Album() {
             </Grid>
             <Grid item >
                 <Button variant="outlined" color="default" className={classes.buttons}>
-                    <Link href="/">BACK</Link>
+                    <Link style={{ color: 'black' }} href="/">BACK</Link>
                 </Button>
             </Grid>
           </Grid>

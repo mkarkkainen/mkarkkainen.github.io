@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     margin: "16px"
   },
+  containers: {
+    padding: "4%"
+}
 }));
 
 const Yamuni = () => {
@@ -37,6 +40,7 @@ const Yamuni = () => {
             direction="column"
             justify="center"
             alignItems="center"
+            className={classes.containers}
         >
             <Grid item maxWidth="sm" className={classes.texts}>
                 <Typography
@@ -44,6 +48,7 @@ const Yamuni = () => {
                 variant="h6"
                 align="center"
                 color="textPrimary"
+                style={{ paddingBottom: "4%" }}
                 gutterBottom
                 >
                 <strong>Fundación Yamuni Tabush</strong>
@@ -62,7 +67,7 @@ const Yamuni = () => {
                 align="center"
                 paragraph
                 >
-                As a <strong>UX/UI designer</strong>, my responsibility was to provide high fidelity wireframes and aid in information achitecture.
+                As a <strong>UX/UI designer</strong>, my responsibility was to provide high fidelity wireframes and aid in information architecture.
                 </Typography>
             </Grid>
 
@@ -74,7 +79,7 @@ const Yamuni = () => {
 
             <Grid item >
                 <Button variant="outlined" color="default" className={classes.buttons}>
-                    <Link href="/Projects">BACK</Link>
+                    <Link style={{ color: 'black' }} href="/Projects">BACK</Link>
                 </Button>
             </Grid>
         </Grid>

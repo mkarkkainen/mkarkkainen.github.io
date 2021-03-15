@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     margin: "16px"
   },
+  containers: {
+      padding: "4%"
+  }
 }));
 
 const UnoTown = () => {
@@ -40,6 +43,7 @@ const UnoTown = () => {
             direction="column"
             justify="center"
             alignItems="center"
+            className={classes.containers}
         >
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
@@ -47,6 +51,7 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
+              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
               <strong>UnoTown</strong>
@@ -84,6 +89,7 @@ const UnoTown = () => {
             direction="column"
             justify="center"
             alignItems="center"
+            className={classes.containers}
         >
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
@@ -91,6 +97,7 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
+              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
               <strong>Dashboard</strong>
@@ -128,21 +135,23 @@ const UnoTown = () => {
               through <strong>expert review</strong>.
             </Typography>
           </Grid>
+        </Grid>
 
-          <Grid container direction="column" justify="center" align="center" >
+          <Grid container direction="column" justify="center" align="center" className={classes.containers}>
             <Grid item>
                 <img className={classes.screens} src={Dashboard} alt="ss" />
                 <img className={classes.screens} src={Users} alt="ss" />
                 <img className={classes.screens} src={Orders} alt="ss" />
             </Grid>
           </Grid>
-        <Grid container direction="column" justify="center" alignItems="center">
+        <Grid container direction="column" justify="center" alignItems="center" className={classes.containers}>
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
               component="h6"
               variant="h6"
               align="center"
               color="textPrimary"
+              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
               <strong>Branding</strong>
@@ -162,12 +171,14 @@ const UnoTown = () => {
           </Grid>
         </Grid>
 
+        <Grid container direction="column" justify="center" alignItems="center" className={classes.containers}>
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
                 component="h6"
                 variant="h6"
                 align="center"
                 color="textPrimary"
+                style={{ paddingBottom: "4%" }}
                 gutterBottom
             >
               <strong>Outcome</strong>
@@ -179,10 +190,10 @@ const UnoTown = () => {
                 paragraph
             >
                 Basic functionality was achieved and tested. A re-design, in the form of a prototype was well on its way until the project had to be put on hold due to lack of adquate funding.            </Typography>
-          </Grid>
-            <Grid item >
+            </Grid>
+            <Grid item xs={3}>
                 <Button variant="outlined" color="default" className={classes.buttons}>
-                    <Link href="/Projects">BACK</Link>
+                    <Link style={{ color: 'black' }} href="/Projects">BACK</Link>
                 </Button>
             </Grid>
         </Grid>

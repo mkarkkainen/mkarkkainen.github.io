@@ -3,7 +3,7 @@ import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import logo from "../../assets/images/slogo.svg";
-import profile from '../../assets/images/me.jpg'
+import profile from '../../assets/images/me.jpg';
 
 import { CssBaseline, Grid, Typography, Paper, Link, Button } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     marginTop: '4%',
     marginLeft: '1%',
+    color: 'black',
     border: '2px solid black'
   },
   name: {
@@ -80,16 +81,16 @@ const Landing = () => {
               </Typography>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
-                <Link href="mailto:miikkak@tuta.io">CONTACT</Link>
+                <Link style={{ color: 'black' }} href="mailto:miikkak@tuta.io">CONTACT</Link>
               </Button>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
-                <Link href="/Projects">PORTFOLIO</Link>
+                <Link style={{ color: 'black' }} href="/Projects">PORTFOLIO</Link>
               </Button>
 
             </Grid>
 
-            <Grid item >
+            <Grid item>
               <Link variant="body1" href="https://github.com/mkarkkainen">
                 <GitHubIcon className={classes.socials} />
               </Link>
@@ -101,7 +102,6 @@ const Landing = () => {
           </div>
         </Grid>
       </Grid>
-
   );
 };
 

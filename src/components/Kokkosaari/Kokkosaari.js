@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     margin: "16px"
   },
+  containers: {
+      padding: "4%"
+  }
 }));
 
 const Kokkosaari = () => {
@@ -35,6 +38,7 @@ const Kokkosaari = () => {
             direction="column"
             justify="center"
             alignItems="center"
+            className={classes.containers}
         >
             <Grid item maxWidth="sm" className={classes.texts}>
                 <Typography
@@ -42,6 +46,7 @@ const Kokkosaari = () => {
                 variant="h6"
                 align="center"
                 color="textPrimary"
+                style={{ paddingBottom: "4%" }}
                 gutterBottom
                 >
                 <strong>Kokkosaari</strong>
@@ -70,7 +75,7 @@ const Kokkosaari = () => {
 
             <Grid item >
                 <Button variant="outlined" color="default" className={classes.buttons}>
-                    <Link href="/Projects">BACK</Link>
+                    <Link style={{ color: 'black' }} href="/Projects">BACK</Link>
                 </Button>
             </Grid>
         </Grid>
