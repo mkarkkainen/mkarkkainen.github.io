@@ -81,8 +81,8 @@ const Landing = () => {
 
               <Typography variant="body1" className={classes.mid}>
                 Enthusiastic about great user experiences and the latest technology in web development. <br />
-                Currently based in Costa Rica. <strong>Pura Vida!</strong><br />
-                Let’s create! <br />
+                Currently based in Costa Rica.
+                <strong>Pura Vida!</strong><br />
               </Typography>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
