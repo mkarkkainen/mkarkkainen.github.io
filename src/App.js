@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { CssBaseline } from "@material-ui/core";
-import { Landing, Footer, Projects, UnoTown, Yamuni, Kokkosaari } from "./components";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { Landing, Projects, UnoTown, Yamuni, Kokkosaari } from "./components";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./theme";
 
@@ -12,10 +12,10 @@ const App = () => {
       <CssBaseline />
         <Switch>
           <Route path="/" component={Landing} exact />
-          <Route path="/Unotown" component={UnoTown} exact />
-          <Route path="/Yamuni" component={Yamuni} exact />
-          <Route path="/Kokkosaari" component={Kokkosaari} exact />
-          <Route path="/Projects" component={Projects} exact />
+          <Route path="/unotown" component={UnoTown} exact />
+          <Route path="/yamuni" component={Yamuni} exact />
+          <Route path="/kokkosaari" component={Kokkosaari} exact />
+          <Route path="/projects" component={Projects} exact />
         </Switch>
       </ThemeProvider>
     </Router>

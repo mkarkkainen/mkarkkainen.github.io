@@ -1,6 +1,11 @@
 import React from "react";
-import { Button, Grid, Typography, Link } from "@material-ui/core";
+import Container from '@material-ui/core/Container'
+import Link from '@material-ui/core/Link'
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
 import { makeStyles } from "@material-ui/core/styles";
+import logo from "../../assets/images/slogo.svg";
 import Screen1 from "../../assets/images/YT1.jpg";
 import Screen2 from "../../assets/images/YT2.jpg";
 import Screen3 from "../../assets/images/YT3.jpg";
@@ -36,6 +41,10 @@ const Yamuni = () => {
   return (
     <>
       <main>
+            <Container align="center" >
+                <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
+                <Link href="/projects"><img src={logo} alt="logo" /></Link>
+            </Container>
         <Grid container
             direction="column"
             justify="center"

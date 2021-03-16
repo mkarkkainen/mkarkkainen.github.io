@@ -1,6 +1,11 @@
 import React from "react";
-import { Button, Grid, Typography, Link } from "@material-ui/core";
+import Button from '@material-ui/core/Button'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import Link from '@material-ui/core/Link'
+import Container from '@material-ui/core/Container'
 import { makeStyles } from "@material-ui/core/styles";
+import logo from "../../assets/images/slogo.svg";
 import Logos from "../../assets/images/KSLogos.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +39,10 @@ const Kokkosaari = () => {
   return (
     <>
       <main>
+            <Container align="center" >
+                <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
+                <Link href="/projects"><img src={logo} alt="logo" /></Link>
+            </Container>
         <Grid container
             direction="column"
             justify="center"

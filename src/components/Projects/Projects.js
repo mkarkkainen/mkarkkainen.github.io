@@ -55,7 +55,7 @@ export default function Album() {
       <main>
         <Container align="center" >
             <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-            <img src={logo} alt="logo" />
+            <Link href="/"><img src={logo} alt="logo" /></Link>
         </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">

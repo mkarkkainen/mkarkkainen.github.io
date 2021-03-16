@@ -5,7 +5,12 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import logo from "../../assets/images/slogo.svg";
 import profile from '../../assets/images/me.jpg';
 
-import { CssBaseline, Grid, Typography, Paper, Link, Button } from "@material-ui/core";
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import Paper from '@material-ui/core/Paper'
+import Link from '@material-ui/core/Link'
+import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -59,11 +64,11 @@ const Landing = () => {
           <div className={classes.paper}>
 
             <Grid item>
-              <Typography variant="h6" className={classes.name}>
-                MIIKKA KÄRKKÄINEN
-              </Typography>
-              
-                <img src={logo} alt="logo" />
+                <Typography variant="h6" className={classes.name}>
+                  MIIKKA KÄRKKÄINEN
+                </Typography>
+                
+                <Link href="/projects"><img src={logo} alt="logo" /></Link>
               
             </Grid>
 
