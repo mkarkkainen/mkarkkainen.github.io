@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   texts: {
-      width: "50%",
+      width: "75%",
   },
   buttons: {
     border: '2px solid black'

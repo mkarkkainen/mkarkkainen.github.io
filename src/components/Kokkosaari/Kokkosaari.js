@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   texts: {
-      width: "50%",
+    width: '75%',
+    padding: theme.spacing(8, 0, 6),
   },
   buttons: {
     border: '2px solid black',
