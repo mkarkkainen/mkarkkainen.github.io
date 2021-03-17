@@ -81,7 +81,7 @@ const Yamuni = () => {
                 </Typography>
             </Grid>
 
-            <Grid item align="center">
+            <Grid item align="center" style={{paddingBottom: '4%'}} >
                 <img className={classes.screens} src={Screen1} alt="ss" />
                 <img className={classes.screens} src={Screen2} alt="ss" />
                 <img className={classes.screens} src={Screen3} alt="ss" />

@@ -94,7 +94,7 @@ const Projects = () => {
                     </Link>
                 </Card>
             </Grid>
-            <Container className={classes.cardGrid}>
+            <Container style={{ padding: '4%' }} align='center'>
                 <Button variant="outlined" color="default" className={classes.buttons}>
                     <Link style={{ color: 'black' }} href="/">BACK</Link>
                 </Button>

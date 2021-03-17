@@ -196,17 +196,18 @@ const UnoTown = () => {
                 variant="body1"
                 color="textSecondary"
                 align="center"
+                style={{paddingBottom: '4%'}}
                 paragraph
             >
                 Basic functionality was achieved and tested. A redesign, in the form of a prototype was well on its way until the project had to be put on hold due to lack of adequate funding.            </Typography>
             </Grid>
-
-        </Grid>
-        <Container>
+            <Grid item>
                 <Button variant="outlined" color="default" className={classes.buttons}>
                     <Link style={{ color: 'black' }} href="/Projects">BACK</Link>
                 </Button>
-        </Container>
+            </Grid>
+        </Grid>
+
       </main>
     </>
   );

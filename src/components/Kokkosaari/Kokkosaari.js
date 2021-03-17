@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       width: "50%",
   },
   buttons: {
-    border: '2px solid black'
+    border: '2px solid black',
   },
   image: {
     backgroundRepeat: "no-repeat",
@@ -79,7 +79,7 @@ const Kokkosaari = () => {
                 </Typography>
             </Grid>
 
-            <Grid item align="center">
+            <Grid item align="center" style={{paddingBottom: '4%'}}>
                 <img className={classes.screens} src={Logos} alt="ss" />
             </Grid>
 
