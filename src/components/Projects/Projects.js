@@ -8,8 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-
-import logo from "../../assets/images/slogo.svg";
+import threeMachetes from '../../assets/images/3machetes.svg'
 
 import Klogo from "../../assets/images/Frame18.jpg";
 import Ulogo from "../../assets/images/Frame12.jpg";
@@ -32,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '100%',
+  },
+  machetes: {
+    width: '100px',
+    height: '100px'
   }
 }));
 
@@ -45,7 +48,8 @@ const Projects = () => {
       <main>
         <Container align="center" >
             <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-            <Link href="/"><img src={logo} alt="logo" /></Link>
+            {/* <Link href="/"><img src={logo} alt="logo" /></Link> */}
+            <Link href="/"><img src={threeMachetes} alt="logo" className={classes.machetes} /></Link>
         </Container>
 
         <Container maxWidth="sm" className={classes.heroContent}>

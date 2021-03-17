@@ -3,6 +3,7 @@ import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import logo from "../../assets/images/slogo.svg";
+import threeMachetes from '../../assets/images/3machetes.svg'
 import profile from '../../assets/images/me.jpg';
 
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -48,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
   },
   name: {
     width: '30%'
+  },
+  machetes: {
+    width: '100px',
+    height: '100px'
   }
 }));
 
@@ -68,7 +73,8 @@ const Landing = () => {
                   MIIKKA KÄRKKÄINEN
                 </Typography>
                 
-                <Link href="/projects"><img src={logo} alt="logo" /></Link>
+                {/* <Link href="/projects"><img src={logo} alt="logo" /></Link> */}
+                <Link href="/projects"><img src={threeMachetes} alt="logo" className={classes.machetes} /></Link>
               
             </Grid>
 

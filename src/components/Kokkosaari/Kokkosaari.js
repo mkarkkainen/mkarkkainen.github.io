@@ -5,7 +5,9 @@ import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
 import Container from '@material-ui/core/Container'
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "../../assets/images/slogo.svg";
+
+import threeMachetes from '../../assets/images/3machetes.svg'
+
 import Logos from "../../assets/images/KSLogos.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
   },
   containers: {
       padding: "4%"
+  },
+  machetes: {
+    width: '100px',
+    height: '100px'
   }
 }));
 
@@ -42,7 +48,7 @@ const Kokkosaari = () => {
       <main>
             <Container align="center" >
                 <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-                <Link href="/projects"><img src={logo} alt="logo" /></Link>
+                <Link href="/projects"><img src={threeMachetes} className={classes.machetes} alt="logo" /></Link>
             </Container>
         <Grid container
             direction="column"

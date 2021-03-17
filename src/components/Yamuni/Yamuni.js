@@ -34,7 +34,11 @@ const useStyles = makeStyles((theme) => ({
   },
   containers: {
     padding: "4%"
-}
+  },
+  machetes: {
+    width: '100px',
+    height: '100px'
+  }
 }));
 
 const Yamuni = () => {
@@ -45,7 +49,7 @@ const Yamuni = () => {
       <main>
             <Container align="center" >
                 <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-                <Link href="/projects"><img src={logo} alt="logo" /></Link>
+                <Link href="/projects"><img src={logo} className={classes.machetes} alt="logo" /></Link>
             </Container>
         <Grid container
             direction="column"

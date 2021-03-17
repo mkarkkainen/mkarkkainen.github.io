@@ -5,7 +5,9 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container'
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "../../assets/images/slogo.svg";
+
+import threeMachetes from '../../assets/images/3machetes.svg'
+
 import splitScreen from "../../assets/images/split-screens.jpg";
 import Dashboard from "../../assets/images/Dashboard.jpg";
 import Users from "../../assets/images/Users.jpg";
@@ -38,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
   containers: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+  },
+  machetes: {
+    width: '100px',
+    height: '100px'
   }
 }));
 
@@ -49,7 +55,7 @@ const UnoTown = () => {
       <main>
         <Container align="center" >
             <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
-            <Link href="/projects"><img src={logo} alt="logo" /></Link>
+            <Link href="/projects"><img src={threeMachetes} className={classes.machetes} alt="logo" /></Link>
         </Container>
         <Grid container
             direction="column"
