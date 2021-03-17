@@ -59,7 +59,7 @@ const Kokkosaari = () => {
                 style={{ paddingBottom: "4%" }}
                 gutterBottom
                 >
-                <strong>Kokkosaari</strong>
+                <strong>Kokkosaari - Product Designer</strong>
                 </Typography>
                 <hr />
                 <Typography

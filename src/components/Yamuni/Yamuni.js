@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
   texts: {
       width: "75%",
+      padding: theme.spacing(8, 0, 6),
+
   },
   buttons: {
     border: '2px solid black'
@@ -60,24 +62,17 @@ const Yamuni = () => {
                 style={{ paddingBottom: "4%" }}
                 gutterBottom
                 >
-                <strong>Fundación Yamuni Tabush</strong>
+                <strong>Fundación Yamuni Tabush - Web Designer</strong>
                 </Typography>
                 <hr />
+
                 <Typography
                 variant="body1"
                 color="textSecondary"
                 align="center"
                 paragraph
                 >
-                Website design for Yamuni Tabush Foundation.
-                </Typography>
-                <Typography
-                variant="body1"
-                color="textSecondary"
-                align="center"
-                paragraph
-                >
-                As a <strong>UX/UI designer</strong>, my responsibility was to provide high fidelity wireframes and aid in information architecture.
+                As a <strong>web designer</strong>, my responsibility was to provide high fidelity wireframes and aid in information architecture.
                 </Typography>
             </Grid>
 

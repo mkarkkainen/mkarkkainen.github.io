@@ -19,6 +19,8 @@ const useStyles = makeStyles((theme) => ({
   },
   texts: {
       width: "75%",
+      padding: theme.spacing(8, 0, 6),
+
   },
   buttons: {
     border: '2px solid black'
@@ -54,6 +56,7 @@ const UnoTown = () => {
             justify="center"
             alignItems="center"
             className={classes.containers}
+            style={{ paddingTop: '4%'}}
         >
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
@@ -61,10 +64,10 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
-              
+              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
-              <strong>UnoTown</strong>
+              <strong>UnoTown - Co-Founder & UX/UI Designer</strong>
             </Typography>
             <hr />
             <Typography
