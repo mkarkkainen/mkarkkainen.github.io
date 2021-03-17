@@ -3,7 +3,7 @@ import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import threeMachetes from '../../assets/images/3machetes.svg'
-import profile from '../../assets/images/me.jpg';
+import profile from '../../assets/images/me3.jpg';
 
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Grid from '@material-ui/core/Grid'

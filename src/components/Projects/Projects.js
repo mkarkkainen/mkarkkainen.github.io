@@ -67,7 +67,7 @@ const Projects = () => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                    <Link href="/Unotown">
+                    <Link href="/unotown">
                         <CardMedia
                             className={classes.cardMedia}
                             image={Ulogo}
@@ -78,7 +78,7 @@ const Projects = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                    <Link href="/Yamuni">
+                    <Link href="/yamuni">
                         <CardMedia
                             className={classes.cardMedia}
                             image={Ylogo}
@@ -89,7 +89,7 @@ const Projects = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
-                    <Link href="/Kokkosaari">
+                    <Link href="/kokkosaari">
                         <CardMedia
                             className={classes.cardMedia}
                             image={Klogo}
