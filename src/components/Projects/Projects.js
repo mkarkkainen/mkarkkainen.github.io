@@ -17,15 +17,9 @@ import Ylogo from "../../assets/images/Frame16.jpg";
 
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    marginRight: theme.spacing(2),
-  },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
     marginTop: "5%",
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
@@ -38,15 +32,11 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '100%',
-  },
-  cardContent: {
-    flexGrow: 1,
   }
 }));
 
 
-
-export default function Album() {
+const Projects = () => {
   const classes = useStyles();
 
   return (
@@ -57,16 +47,17 @@ export default function Album() {
             <Typography align="center" variant="h6">MIIKKA KÄRKKÄINEN</Typography>
             <Link href="/"><img src={logo} alt="logo" /></Link>
         </Container>
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
+
+        <Container maxWidth="sm" className={classes.heroContent}>
             <Typography component="h6" variant="h6" align="center" color="textPrimary" gutterBottom>
                 <strong>UX/UI & Product Design Projects</strong>
             </Typography>
+            <hr />
             <Typography variant="body1" align="center" color="textSecondary" paragraph>
                 Here is a collection of some of the design projects I have worked on in the past.
             </Typography>
-          </Container>
-        </div>
+        </Container>
+
         <Container className={classes.cardGrid} maxWidth="md">
 
           <Grid container spacing={4}>
@@ -103,11 +94,11 @@ export default function Album() {
                     </Link>
                 </Card>
             </Grid>
-            <Grid item >
+            <Container className={classes.cardGrid}>
                 <Button variant="outlined" color="default" className={classes.buttons}>
                     <Link style={{ color: 'black' }} href="/">BACK</Link>
                 </Button>
-            </Grid>
+            </Container>
           </Grid>
         </Container>
       </main>
@@ -115,30 +106,4 @@ export default function Album() {
   );
 }
 
-
-// import React from 'react';
-// import { Container, Typography } from '@material-ui/core'
-// import { makeStyles } from '@material-ui/core/styles';
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         height: '100vh',
-//     }
-// }))
-
-
-// const Projects = () => {
-//     const classes = useStyles();
-
-//     return (
-//         <header>
-//             <Container alignItems="center" className={classes.root}>
-
-//                 <Typography>Projects</Typography>
-
-//             </Container>
-//         </header>
-//     )
-// }
-
-// export default Projects;
+export default Projects;

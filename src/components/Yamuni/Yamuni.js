@@ -62,6 +62,7 @@ const Yamuni = () => {
                 >
                 <strong>Fundación Yamuni Tabush</strong>
                 </Typography>
+                <hr />
                 <Typography
                 variant="body1"
                 color="textSecondary"

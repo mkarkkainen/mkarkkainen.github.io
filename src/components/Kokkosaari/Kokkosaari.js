@@ -60,6 +60,7 @@ const Kokkosaari = () => {
                 >
                 <strong>Kokkosaari</strong>
                 </Typography>
+                <hr />
                 <Typography
                 variant="body1"
                 color="textSecondary"

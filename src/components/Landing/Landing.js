@@ -82,7 +82,7 @@ const Landing = () => {
               <Typography variant="body1" className={classes.mid}>
                 Enthusiastic about great user experiences and the latest technology in web development. <br />
                 Currently based in Costa Rica. <br />
-                <strong>Pura Vida!</strong>
+                <strong>Pura Vida!</strong><br />
               </Typography>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
@@ -90,7 +90,7 @@ const Landing = () => {
               </Button>
 
               <Button variant="outlined" color="default" className={classes.buttons}>
-                <Link style={{ color: 'black' }} href="/Projects">PORTFOLIO</Link>
+                <Link style={{ color: 'black' }} href="/projects">PORTFOLIO</Link>
               </Button>
 
             </Grid>

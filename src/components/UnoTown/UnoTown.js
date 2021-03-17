@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "16px"
   },
   containers: {
-      padding: "4%"
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
   }
 }));
 
@@ -60,11 +61,12 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
-              style={{ paddingBottom: "4%" }}
+              
               gutterBottom
             >
               <strong>UnoTown</strong>
             </Typography>
+            <hr />
             <Typography
               variant="body1"
               color="textSecondary"
@@ -73,8 +75,8 @@ const UnoTown = () => {
             >
               Uno Town is an online subcontracting solution for the cleaning
               industry in Finland. It focuses on simplifying the process of
-              hiring subcontractors, management of orders and digitalizing steps
-              along the way. Uno Town improves <strong>efficiancy</strong> &{" "}
+              hiring subcontractors, management of orders and digitizing steps
+              along the way. Uno Town improves <strong>efficiency</strong> &{" "}
               <strong>transparency</strong> for all parties involved.
             </Typography>
             <Typography
@@ -106,7 +108,6 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
-              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
               <strong>Dashboard</strong>
@@ -120,7 +121,7 @@ const UnoTown = () => {
               Daily operations required an unnecessary amount of clicking around
               different pages to <strong>access vital data</strong>. This caused
               mistakes to happen on a regular basis. Such as, the wrong amount
-              of taskers arriving to a gig or complaints not getting immediate
+              of taskers arriving at a gig or complaints not getting immediate
               attention.
             </Typography>
             <Typography
@@ -129,7 +130,7 @@ const UnoTown = () => {
               color="textSecondary"
               paragraph
             >
-              A modifyable component based dashbboard was designed to allow for 
+              A modifiable component based dashboard was designed to allow for 
               <strong> customizability</strong> as testing showed that different
               users required different types of information.
             </Typography>
@@ -146,13 +147,14 @@ const UnoTown = () => {
           </Grid>
         </Grid>
 
-          <Grid container direction="column" justify="center" align="center" className={classes.containers}>
+        <Grid container direction="column" justify="center" align="center" >
             <Grid item>
                 <img className={classes.screens} src={Dashboard} alt="ss" />
                 <img className={classes.screens} src={Users} alt="ss" />
                 <img className={classes.screens} src={Orders} alt="ss" />
             </Grid>
-          </Grid>
+        </Grid>
+
         <Grid container direction="column" justify="center" alignItems="center" className={classes.containers}>
           <Grid item maxWidth="sm" className={classes.texts}>
             <Typography
@@ -160,7 +162,6 @@ const UnoTown = () => {
               variant="h6"
               align="center"
               color="textPrimary"
-              style={{ paddingBottom: "4%" }}
               gutterBottom
             >
               <strong>Branding</strong>
@@ -187,7 +188,6 @@ const UnoTown = () => {
                 variant="h6"
                 align="center"
                 color="textPrimary"
-                style={{ paddingBottom: "4%" }}
                 gutterBottom
             >
               <strong>Outcome</strong>
@@ -198,14 +198,15 @@ const UnoTown = () => {
                 align="center"
                 paragraph
             >
-                Basic functionality was achieved and tested. A re-design, in the form of a prototype was well on its way until the project had to be put on hold due to lack of adquate funding.            </Typography>
+                Basic functionality was achieved and tested. A redesign, in the form of a prototype was well on its way until the project had to be put on hold due to lack of adequate funding.            </Typography>
             </Grid>
-            <Grid item xs={3}>
+
+        </Grid>
+        <Container>
                 <Button variant="outlined" color="default" className={classes.buttons}>
                     <Link style={{ color: 'black' }} href="/Projects">BACK</Link>
                 </Button>
-            </Grid>
-        </Grid>
+        </Container>
       </main>
     </>
   );
